@@ -1,5 +1,6 @@
 //Scripts
 execute_string(get_external("Objects/Deadbox/Deadbox.gml"))
+execute_string(get_external("Objects/Camera/Camera.gml"))
 
 
 //Vehicles

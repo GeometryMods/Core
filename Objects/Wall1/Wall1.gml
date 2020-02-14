@@ -7,10 +7,3 @@ obj_wall = object_add()
 object_set_sprite(obj_wall, spr_wall)
 
 //------------- OBJECT LOGIC -------------
-xx = 30
-for(i = 0; i < 100; i+=1) {
-	yy = room_height - 30
-
-	instance_create(xx, yy, obj_wall)
-	xx += 61
-}
