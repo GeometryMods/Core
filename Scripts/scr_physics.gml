@@ -1,4 +1,4 @@
-
+if fireboost exit;
 vsp += grav
 if vsp > maxvsp {
 	vsp = maxvsp

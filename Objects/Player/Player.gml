@@ -34,6 +34,7 @@ object_event_add(obj_player, ev_create, 0, '
 ')
 
 object_event_add(obj_player, ev_step, 0, '
+
 	hsp=10.6*global.spdboost
 	execute_file("Scripts/scr_mini_set.gml")
 	execute_file("Scripts/scr_jboost_set.gml")
@@ -45,6 +46,9 @@ object_event_add(obj_player, ev_step, 0, '
 			vsp = -jumpspd
 		}
 	}
+
+	//TODO: Move this to the ev_step_end
+	x += hsp
 ')
 
 object_event_add(obj_player, ev_draw, 0, '
