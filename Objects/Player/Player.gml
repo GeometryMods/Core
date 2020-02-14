@@ -21,7 +21,7 @@ object_event_add(obj_player, ev_create, 0, '
 	fis=1
 	image_xscale=1
 	image_yscale=1
-	//TODO: Deadbox
+	ddb = instance_create(x, y, obj_player_deadbox)
 	avoidup=1
 	col1=global.col1
 	col2=global.col2
@@ -49,6 +49,10 @@ object_event_add(obj_player, ev_step, 0, '
 
 	//TODO: Move this to the ev_step_end
 	x += hsp
+')
+
+object_event_add(obj_player, ev_step, 1, '
+	execute_file("Scripts/scr_hitbox.gml", x, y)
 ')
 
 object_event_add(obj_player, ev_draw, 0, '

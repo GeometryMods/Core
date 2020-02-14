@@ -16,3 +16,4 @@ execute_string(get_external("Objects/Wall1/Wall1.gml"))
 
 
 //Scripts
+execute_string(get_external("Objects/Deadbox/Deadbox.gml"))
