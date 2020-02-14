@@ -5,3 +5,4 @@ obj_player_deadbox = object_add()
 
 //OBJECT SETTINGS
 object_set_sprite(obj_player_deadbox, spr_player_deadbox)
+object_set_visible(obj_player_deadbox, false)
