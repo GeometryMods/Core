@@ -46,13 +46,24 @@ object_event_add(obj_player, ev_step, 0, '
 			vsp = -jumpspd
 		}
 	}
+	global.ylimit=y
+
+	execute_file("Scripts/scr_hitbox.gml", x, y)
+	execute_file("Scripts/scr_interactive.gml")
+
+	//Effects
+	if trail {
+		execute_file("Scripts/scr_trail.gml", 0,0)
+	}
+	if place_meeting(x, y+gravdir, obj_wall) {
+		repeat 2
+		{
+			execute_file("Scripts/scr_sprite.gml")
+		}
+	}
 
 	//TODO: Move this to the ev_step_end
 	x += hsp
-')
-
-object_event_add(obj_player, ev_step, 1, '
-	execute_file("Scripts/scr_hitbox.gml", x, y)
 ')
 
 object_event_add(obj_player, ev_draw, 0, '
