@@ -39,3 +39,4 @@ for(i = 0; i < 100; i+=1) {
 }
 
 room_instance_add(rm_debug, 30, 500, obj_player)
+room_instance_add(rm_debug, 0, 0, obj_camera)
