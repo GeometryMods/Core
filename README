@@ -2,6 +2,6 @@ What is ToModGD?
 
 Is basically a port to GeometryDash (to GameMaker again) but in this time, it won't be coded in GameMaker directly, it'll be coded in different files that will allow to the user to mod (literally) every piece of the game
 
-You can fork this "core" and freely modify it, you can create your own mods, but none mod will be pushed to this repository, 'coz it's aimed just to be the core, that you can download it and create your own game, with your own (or other's) mods, this could be "compared" to linux, this is linux, and you can create your own distros
+You can fork this "core" and freely modify it, you can create your own mods, but none mod will be pushed to this repository, 'coz it's aimed just to be the core, so you can download it and create your own game, with your own (or other's) mods, this could be "compared" to linux, this is linux, the bare core, and you can create your own distros
 
 This game is fully available to run in linux (by using wine)
