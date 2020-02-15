@@ -7,3 +7,5 @@
  *		execute_string(get_external("Mods/mod_name/ModEntry.gml"))
  *
  */
+
+execute_string(get_external("Mods/Editor/ModEntry.gml"))

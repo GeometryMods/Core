@@ -61,8 +61,9 @@ object_event_add(obj_player, ev_step, 0, '
 			execute_file("Scripts/scr_sprite.gml")
 		}
 	}
+')
 
-	//TODO: Move this to the ev_step_end
+object_event_add(obj_player, ev_step, ev_step_end, '
 	x += hsp
 ')
 
