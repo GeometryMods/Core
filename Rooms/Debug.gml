@@ -5,7 +5,6 @@ rm_debug = room_add()
 /*
  * Some before-run configs
  */
-room_speed = 60
 
 globalvar default_debug_room_width;
 default_debug_room_width = 100000
