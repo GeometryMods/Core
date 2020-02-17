@@ -1,6 +1,7 @@
 //Scripts
 execute_string(get_external("Objects/Deadbox/Deadbox.gml"))
 execute_string(get_external("Objects/Camera/Camera.gml"))
+execute_string(get_external("Objects/Scripts/Restart.gml"))
 
 
 //Utils
@@ -20,6 +21,7 @@ execute_string(get_external("Objects/Wall1/Ground1.gml"))
 
 
 //Traps
+execute_string(get_external("Objects/Spike1/Spike1.gml"))
 
 
 
