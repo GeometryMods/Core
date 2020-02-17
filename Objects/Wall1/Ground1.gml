@@ -3,6 +3,7 @@ globalvar spr_ground1, obj_ground1;
 spr_ground1 = sprite_add("Objects/Wall1/spr_ground1.png", 1, false, false, 0,0)
 obj_ground1 = object_add()
 object_set_sprite(obj_ground1, spr_ground1)
+object_set_parent(obj_ground1, obj_wall)
 
 
 object_event_add(obj_ground1, ev_create, 0, '
