@@ -9,10 +9,6 @@ object_set_sprite(obj_camera, spr_camera)
 /* OBJECT LOGIC */
 object_event_add(obj_camera, ev_create, 0, '
 	room_speed = 60
-	
-	view_yview = obj_player.y
-	view_wview = 995
-	view_hview = 664
 ')
 
 object_event_add(obj_camera, ev_step, 0, '
