@@ -1,6 +1,7 @@
-globalvar spr_camera, obj_camera;
+globalvar spr_bg1, spr_camera, obj_camera;
 
 spr_camera = sprite_add("Objects/Camera/spr_camera.png", 1, false, false, 30, 30)
+spr_bg1 = sprite_add("Sprites/spr_bg1.png", 1, false, false, 0, 0)
 obj_camera = object_add()
 
 /* OBJECT SETTINGS */
@@ -9,6 +10,7 @@ object_set_sprite(obj_camera, spr_camera)
 /* OBJECT LOGIC */
 object_event_add(obj_camera, ev_create, 0, '
 	room_speed = 60
+	depth = 1
 ')
 
 object_event_add(obj_camera, ev_step, 0, '
@@ -36,5 +38,14 @@ object_event_add(obj_camera, ev_step, 0, '
 		{
 			view_yview=room_height-view_hview
 		}
+	}
+')
+
+object_event_add(obj_camera, ev_draw, 0, '
+	jx = 0
+	toj = sprite_get_width(spr_bg1)
+	repeat room_width/toj {
+		execute_file("Scripts/draw_sprite2.gml", spr_bg1,0,global.bgcolor,(view_xview/1.1)+jx,(view_yview/1.1))
+		jx += toj
 	}
 ')
