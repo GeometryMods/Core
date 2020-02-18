@@ -1,8 +1,8 @@
 //The player required vars
 globalvar spr_player_a, spr_player_b, obj_player;
 
-spr_player_a = sprite_add("Objects/Player/spr_player_a.png", 1, false, false, 30, 30)
-spr_player_b = sprite_add("Objects/Player/spr_player_b.png", 1, false, false, 30, 30)
+spr_player_a = sprite_add("Objects/Players/spr_player_a.png", 1, false, false, 30, 30)
+spr_player_b = sprite_add("Objects/Players/spr_player_b.png", 1, false, false, 30, 30)
 obj_player = object_add()
 
 //OBJECT SETTINGS

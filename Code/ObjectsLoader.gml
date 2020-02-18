@@ -10,7 +10,7 @@ execute_string(get_external("Objects/Particles/Particles.gml"))
 
 
 //Vehicles
-execute_string(get_external("Objects/Player/Player.gml"))
+execute_string(get_external("Objects/Players/Cube.gml"))
 
 
 //Solids
