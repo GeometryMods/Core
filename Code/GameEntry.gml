@@ -15,6 +15,9 @@ global.pause=0
 global.col1 = c_yellow
 global.col2 = c_aqua
 
+//This could be useful to some mods
+global.playing = false
+
 
 //Then we load the mods
 execute_string(get_external("ModLoader.gml"))
