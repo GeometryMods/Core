@@ -24,4 +24,10 @@ repeat 45
 }
 with obj_player_deadbox {instance_destroy()}
 instance_destroy()
-instance_create(0,0,obj_restart)
+
+if global.playing {
+	global.playing = false
+} else {
+	//TODO: Make the restart to work
+	instance_create(0,0,obj_restart)
+}
