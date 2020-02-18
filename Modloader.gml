@@ -8,4 +8,6 @@
  *
  */
 
-execute_string(get_external("Mods/Editor/ModEntry.gml"))
+if directory_exists("Mods/Editor") {
+	execute_string(get_external("Mods/Editor/ModEntry.gml"))
+}
