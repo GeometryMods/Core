@@ -91,6 +91,6 @@ object_event_add(obj_player, ev_draw, 0, '
 	if angle <= -360 {
 		angle = 0
 	}
-	draw_sprite_ext(spr_player_a,image_index,x,y,image_xscale,image_yscale,(angle*gravdir)+angleplus,col1,image_alpha)
-	draw_sprite_ext(spr_player_b,image_index,x,y,image_xscale,image_yscale,(angle*gravdir)+angleplus,col2,image_alpha)
+	draw_sprite_ext(spr_player_a,global.cube,x,y,image_xscale,image_yscale,(angle*gravdir)+angleplus,col1,image_alpha)
+	draw_sprite_ext(spr_player_b,global.cube,x,y,image_xscale,image_yscale,(angle*gravdir)+angleplus,col2,image_alpha)
 ')

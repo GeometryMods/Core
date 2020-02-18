@@ -14,6 +14,7 @@ global.pause=0
 
 global.col1 = c_yellow
 global.col2 = c_aqua
+global.cube = 0
 
 //This could be useful to some mods
 global.playing = false
