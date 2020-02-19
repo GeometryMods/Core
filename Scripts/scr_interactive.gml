@@ -54,3 +54,30 @@ if place_meeting(x, y, obj_ring5) and canring {
 	canring=0
 	trail=1
 }
+
+//Paths
+
+if place_meeting(x, y, obj_path1)
+{
+	vsp = -jumpspd * 1.5
+	trail = 1
+}
+
+if place_meeting(x, y, obj_path2)
+{
+	vsp = -jumpspd + 2
+	trail = 1
+}
+
+if place_meeting(x, y, obj_path3)
+{
+	gravdir *= -1
+	vsp = 20
+	trail = 1
+}
+
+if place_meeting(x, y, obj_path4)
+{
+	vsp = -jumpspd - 16
+	trail = 1
+}
