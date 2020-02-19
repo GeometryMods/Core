@@ -25,8 +25,11 @@ execute_string(get_external("Objects/Wall1/Ground1.gml"))
 execute_string(get_external("Objects/Spike1/Spike1.gml"))
 
 
+// Specials
+execute_string(get_external("Objects/Special/SpecialObjects.gml"))
 
 
 
 // Utils
 execute_string(get_external("Code/Utils/Objects.gml"))
+
