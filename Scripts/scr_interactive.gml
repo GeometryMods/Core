@@ -82,6 +82,9 @@ if place_meeting(x, y, obj_path4)
 	trail = 1
 }
 
+
+
+
 // Speeds
 //x0.5
 if place_meeting(x, y, obj_speed0) {
@@ -98,4 +101,18 @@ if place_meeting(x, y, obj_speed2) {
 //x3
 if place_meeting(x, y, obj_speed3) {
 	global.spdboost = 1.5
+}
+
+
+
+
+//Portals
+//Cube
+if place_meeting(x, y, obj_cube_portal) {
+	execute_file("Scripts/scr_transform.gml", obj_player)
+}
+
+//Ship
+if place_meeting(x, y, obj_ship_portal) {
+	execute_file("Scripts/scr_transform.gml", obj_ship)
 }
