@@ -9,5 +9,7 @@ global.object[7] = obj_path1
 global.object[8] = obj_path2
 global.object[9] = obj_path3
 global.object[10] = obj_path4
+global.object[11] = obj_cube_portal
+global.object[12] = obj_ship_portal
 
-global.objects = 11
+global.objects = 13
