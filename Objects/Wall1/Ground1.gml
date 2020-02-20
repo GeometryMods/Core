@@ -42,7 +42,6 @@ object_event_add(obj_ground2, ev_step, 0, '
 
 object_event_add(obj_ground2, ev_draw, 0, '
 	jx = 0
-
 	repeat image_xscale
 	{
 		execute_file("Scripts/draw_sprite2.gml", sprite_index, 0, global.gcolor, x+jx, y)
