@@ -81,3 +81,21 @@ if place_meeting(x, y, obj_path4)
 	vsp = -jumpspd - 16
 	trail = 1
 }
+
+// Speeds
+//x0.5
+if place_meeting(x, y, obj_speed0) {
+	global.spdboost = 0.75
+}
+//x1
+if place_meeting(x, y, obj_speed1) {
+	global.spdboost = 1
+}
+//x2
+if place_meeting(x, y, obj_speed2) {
+	global.spdboost = 1.25
+}
+//x3
+if place_meeting(x, y, obj_speed3) {
+	global.spdboost = 1.5
+}
