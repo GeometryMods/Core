@@ -15,7 +15,5 @@ global.object[13] = obj_speed0
 global.object[14] = obj_speed1
 global.object[15] = obj_speed2
 global.object[16] = obj_speed3
-global.object[17] = obj_speedx0
-global.object[18] = obj_speedx4
 
-global.objects = 19
+global.objects = 17

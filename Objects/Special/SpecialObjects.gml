@@ -3,7 +3,7 @@ globalvar spr_ring1, spr_ring2, spr_ring3, spr_ring4, spr_ring5;
 globalvar spr_path1, spr_path2, spr_path3, spr_path4;
 
 globalvar spr_cube_portal, spr_ship_portal;
-globalvar spr_speed0, spr_speed1, spr_speed2, spr_speed3, spr_speedx0, spr_speedx4;
+globalvar spr_speed0, spr_speed1, spr_speed2, spr_speed3;
 
 spr_ring1 = sprite_add("Objects/Special/Rings/spr_ring1.png", 1, false, false, 30, 30)
 spr_ring2 = sprite_add("Objects/Special/Rings/spr_ring2.png", 1, false, false, 30, 30)
@@ -23,15 +23,13 @@ spr_speed0 = sprite_add("Objects/Special/Speeds/spr_speed0.png", 1, false, false
 spr_speed1 = sprite_add("Objects/Special/Speeds/spr_speed1.png", 1, false, false, 33, 56)
 spr_speed2 = sprite_add("Objects/Special/Speeds/spr_speed2.png", 1, false, false, 50, 57)
 spr_speed3 = sprite_add("Objects/Special/Speeds/spr_speed3.png", 1, false, false, 65, 56)
-spr_speedx0 = sprite_add("Objects/Special/Speeds/spr_speedx0.png", 1, false, false, 63, 75)
-spr_speedx4 = sprite_add("Objects/Special/Speeds/spr_speedx4.png", 1, false, false, 118, 98)
 
 //Objects
 globalvar obj_ring1, obj_ring2, obj_ring3, obj_ring4, obj_ring5;
 globalvar obj_path1, obj_path2, obj_path3, obj_path4;
 
 globalvar obj_cube_portal, obj_ship_portal;
-globalvar obj_speed0, obj_speed1, obj_speed2, obj_speed3, obj_speedx0, obj_speedx4;
+globalvar obj_speed0, obj_speed1, obj_speed2, obj_speed3;
 
 obj_ring1 = object_add()
 obj_ring2 = object_add()
@@ -51,8 +49,6 @@ obj_speed0 = object_add()
 obj_speed1 = object_add()
 obj_speed2 = object_add()
 obj_speed3 = object_add()
-obj_speedx0 = object_add()
-obj_speedx4 = object_add()
 
 
 object_set_sprite(obj_ring1, spr_ring1)
@@ -73,8 +69,6 @@ object_set_sprite(obj_speed0, spr_speed0)
 object_set_sprite(obj_speed1, spr_speed1)
 object_set_sprite(obj_speed2, spr_speed2)
 object_set_sprite(obj_speed3, spr_speed3)
-object_set_sprite(obj_speedx0, spr_speedx0)
-object_set_sprite(obj_speedx4, spr_speedx4)
 
 
 object_event_add(obj_ring1, ev_create, 0, '
