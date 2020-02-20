@@ -116,3 +116,8 @@ if place_meeting(x, y, obj_cube_portal) {
 if place_meeting(x, y, obj_ship_portal) {
 	execute_file("Scripts/scr_transform.gml", obj_ship)
 }
+
+//Ball
+if place_meeting(x, y, obj_ball_portal) {
+	execute_file("Scripts/scr_transform.gml", obj_ball)
+}

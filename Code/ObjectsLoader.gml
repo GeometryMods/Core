@@ -12,6 +12,7 @@ execute_string(get_external("Objects/Particles/Particles.gml"))
 //Vehicles
 execute_string(get_external("Objects/Players/Cube/Cube.gml"))
 execute_string(get_external("Objects/Players/Ship/Ship.gml"))
+execute_string(get_external("Objects/Players/Ball/Ball.gml"))
 
 
 //Solids

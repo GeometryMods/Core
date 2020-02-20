@@ -11,9 +11,10 @@ global.object[9] = obj_path3
 global.object[10] = obj_path4
 global.object[11] = obj_cube_portal
 global.object[12] = obj_ship_portal
-global.object[13] = obj_speed0
-global.object[14] = obj_speed1
-global.object[15] = obj_speed2
-global.object[16] = obj_speed3
+global.object[13] = obj_ball_portal
+global.object[14] = obj_speed0
+global.object[15] = obj_speed1
+global.object[16] = obj_speed2
+global.object[17] = obj_speed3
 
-global.objects = 17
+global.objects = 18
