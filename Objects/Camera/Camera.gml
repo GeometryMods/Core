@@ -9,7 +9,6 @@ object_set_sprite(obj_camera, spr_camera)
 
 /* OBJECT LOGIC */
 object_event_add(obj_camera, ev_create, 0, '
-	room_speed = 60
 	depth = 1
 ')
 
