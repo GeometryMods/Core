@@ -10,7 +10,7 @@ object_set_sprite(obj_ship, spr_ship_a)
 
 object_event_add(obj_ship, ev_create, 0, '
 	execute_file("Scripts/scr_ini_physics.gml", 2)
-	//global.yscroll=0
+	global.yscroll=0
 	fis=0.8
 	image_xscale=0.8
 	ddb=instance_create(x, y, obj_player_deadbox)

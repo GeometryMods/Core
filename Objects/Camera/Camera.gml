@@ -44,7 +44,7 @@ object_event_add(obj_camera, ev_draw, 0, '
 	jx = 0
 	toj = sprite_get_width(spr_bg1)
 	repeat room_width/toj {
-		execute_file("Scripts/draw_sprite2.gml", spr_bg1,0,global.bgcolor,(view_xview/1.1)+jx,(view_yview/1.1))
+		execute_file("Scripts/draw_sprite2.gml", spr_bg1,0,global.bgcolor,(view_xview/1.1)+jx,(view_yview/1.1)+100)
 		jx += toj
 	}
 ')
